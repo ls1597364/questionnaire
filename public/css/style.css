@@ -1,0 +1,96 @@
+
+html {
+    height: 100%; 
+    width: 100%;
+}
+
+body {
+    height: 100%; 
+    width: 100%; 
+    margin: 0px; 
+    padding: 0px;
+    border: 0px;  
+    background: #fff;
+
+}
+#sub_frame_header{
+    height: 40px; 
+    margin: 1px; 
+    paddding: 1px; 
+    text-align: center;
+
+}
+#sub_frame_header h4 {
+    margin: 0px; 
+    color: #fff; 
+    text-align: center; 
+    background-color:#900000;
+}
+
+#mainframe_header{
+    height: 40px; 
+    margin: 0px; 
+    text-align: center;
+    background: #514b4b;
+}
+
+#mainframe_header h3 {
+    padding: 1em; 
+    margin: 0px; 
+    color: #fff; 
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:0px;
+}
+
+#header{
+    height: 85px; 
+    margin: 0px; 
+    text-align: left;
+    background: #088da5;
+}
+
+#error{
+    align: center;
+    color:red;
+}
+
+#success{
+    align: center;
+    color:green;
+}
+#header h1 {
+    padding: 1em; 
+    margin: 0px; 
+    color: #fff; 
+    text-align: center;
+}
+
+#loginForm {
+    vertical-align: middle; 
+    align: center;
+}
+
+#content {
+    margin: 0px; 
+    padding-top: 0px;  
+    width: 100%; 
+    background: white;
+}
+
+#nav {
+    height: 100%; 
+    width: 180px; 
+    background: #c0d6e4; 
+    margin: 0px; 
+    padding: 1em 2em; 
+    positon: top;
+
+}
+
+#main {
+    padding-top: 1em; 
+    padding-left: 1em; 
+    vertical-align: top; 
+    align: center;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Clonn.info - Facebook API demo PHP SDK</title>
+    <style>
+      body {
+        font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+      }
+      h1 a {
+        text-decoration: none;
+        color: #3b5998;
+      }
+      h1 a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pure PHP SDK, without javascript</h1>
+    <div> 
+        <ul>
+            <li><a href= <?php echo $facebook->getLogoutUrl(); ?>>LogOUT</a></li>
+            <li><a href= <?php echo $facebook->getLoginUrl(); ?>>LogIN</a></li>
+        </ul>      
+    </div>
+
+    <h3>Session</h3>
+    <?php if ($me): ?>
+    <pre><?php print_r($session); ?></pre>
+
+    <h3>You</h3>
+    <img src="https://graph.facebook.com/<?php echo $uid; ?>/picture">
+    <?php echo $me['name']; ?>
+
+    <h3>Your User Object</h3>
+    <pre><?php print_r($me); ?></pre>
+    <?php else: ?>
+    <strong><em>You are not Connected.</em></strong>
+    <?php endif ?>
+  </body>
+</html>
